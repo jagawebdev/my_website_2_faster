@@ -1,0 +1,228 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { 
+  background: url(../images/press-play.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    min-height: 600px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.head-container {
+    width: 70%;
+    min-height: 80vh;
+    margin: 40px auto;
+    text-align: center;
+    padding-bottom: 20px;
+    border: rgba(226,64,64,0.7) 10px solid;
+    letter-spacing: 3px;
+}
+
+.line {
+    background-color: white;
+    width: 90%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.head1 {
+    display: inline-block;
+    font-size: 90px;
+    height: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tool-container {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.play-btn {
+    display: inline-block;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+.play-btn:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#play {
+    display: block;
+    margin: auto;
+    width: 120px;
+    text-align: center;
+    background-color: rgba(226,64,64,0.7);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+#pause {
+    display: block;
+    margin: auto;
+    width: 120px;
+    text-align: center;
+    background-color: rgba(226,64,64,0.7);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#volume {
+    width: 40%;
+    -webkit-appearance: none !important;
+    margin: 40px;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: pink;
+    
+}
+
+#traker {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    
+}
+
+#progress-bar {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 8px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+#progress {
+    display: inline-block;
+    position: absolute;
+    height: 8px;
+    left: 0;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+
+#duration {
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.footer {
+    font-family: 'Inconsolata';
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: 3px;
+    position: fixed;
+    bottom: 0;
+    text-transform: uppercase;
+}
+
+.prev-next {
+    display: block;
+    margin: auto;
+    width: 142px;
+}
+
+.footer-logo {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+    background-image: url(../../images/jaga-logo.png);
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+}
+
+
+.home,
+.next-article,
+.prev-article {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #8e8d8e;
+    font-size: 36px;
+    margin: 6px;
+}
+
+
+.next-article:hover,
+.prev-article:hover,
+.home:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+
+#disqus_thread {
+    padding: 20px;
+    width: 60%;
+    margin: 150px auto;
+    background-color: #e6e6e6;
+}
+
+
+@media screen and (max-width: 640px) {
+    .head-container {
+        width: 95%;
+    }
+    
+    #volume {
+        width: 70%;
+    }
+    
+    footer {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-logo {
+        margin-right: 1rem;
+    }
+    
+    #disqus_thread {
+        width: 95%;
+    }
+}
+
+
+
+

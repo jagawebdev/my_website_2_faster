@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="article-styles/press-play.css">
+        <title>Press Play | Experiments</title>
+        <link rel="shortcut icon" href="../images/jaga-logo.png" />
+    </head>
+    <body>
+        <section class="head-container">
+            
+            <p class="head1">Where is my mind</p>
+            <div class="line"></div>
+            <p class="head2">Maxence Cyrin</p>
+            
+            <section class="tool-container">
+                <div class="play-btn">
+                    <div id="play">play</div>
+                    <div id="pause">pause</div>
+                </div>
+                    <div class="clearfix"></div>
+                    <input id="volume" type="range" min="0" max="10" value="5">
+                    
+                <div id="tracker">
+                    <div id="progress-bar">
+                        <span id="progress"></span>
+                    </div>
+                    <span id="duration"></span>
+                </div>
+                <div class="clearfix"></div>
+            </section>
+            <div class="bottom-corner"></div>
+            <div class="left-corner"></div>
+            
+        </section>
+        <section class="footer">
+            <div>
+                <a  href="../index.html" class="logo-home"><div class="footer-logo"></div></a>
+                <div class="prev-next">
+                    <a href="love.html"><div class="prev-article ion-arrow-left-c"></div></a>
+                    <a  href="../../app/index.html#/experiments" class="home ion-android-home"></a>
+                    <a href="happened.html"><div class="next-article ion-arrow-right-c"></div></a>
+                </div>
+            </div>
+        </section>
+        
+        <audio loop="loop" data-bpm="72" id="myAudio">
+            <source src="media/where.mp3" type="audio/mp3" />
+            <source src="media/where.ogg" type="audio/ogg" />
+        </audio>
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+            <script src="scripts/press-play.js"></script>
+    </body>
+</html>

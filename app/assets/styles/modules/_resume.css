@@ -1,0 +1,160 @@
+.resume-page {
+    background-color: #f4f4f4;
+    
+.contact-choices {
+    position: relative;
+    width: 100%;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.thumbs {
+    transform: scale(0.9) translateY(3rem);
+    -webkit-transform: scale(0.9) translateY(3rem);
+    -moz-transform: scale(0.9) translateY(3rem);
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    opacity: 0;
+}
+
+.thumbs-ul {
+    padding: 0 5px;
+    li {
+    text-decoration: none;
+    list-style: none;
+}
+}
+
+.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+}
+
+.icon {
+    font-size: 30px;
+    color: #b6b6b6;
+}
+}
+
+.resume-container {
+    width: 50%;
+    padding: 150px 0 50px;
+    margin: auto;
+    font-size: 16px;
+    color: black;
+    position: relative;
+    display: table;
+}
+
+.picture {
+   float: left;
+    height: 150px;
+    width: 150px;
+    background: url(../../assets/images/headshot.png) no-repeat;
+    border-radius: 50%;
+    margin: 0 40px 20px 0px;
+    border: solid white 3px;
+}
+
+.full-name {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.head {
+    font-size: 22px;
+    border-bottom: 1px solid gray;
+    letter-spacing: 0.06em;
+    text-align: left;
+    line-height: 30px;
+}
+
+.sub-head {
+    font-weight: 300;
+}
+
+.cover-letter {
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 16px;
+    width:70%;
+}
+
+.resume-content {
+    line-height: 30px;
+}
+
+.main-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.re-title {
+    font-weight: 400;
+}
+
+.re-date {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.re-class {
+    font-weight: 300;
+}
+
+.re-points {
+    li {
+        padding: 0;
+        list-style-position: outside;
+    }
+}
+@media screen and (max-width: 670px) {
+    
+    .resume-container {
+        padding-top: 100px;
+        width: 90%;
+    }
+    
+    .contact-choices {
+        display: none;
+    }
+    
+    
+    .cover-letter {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media (min-width: 671px) and (max-width: 1230px) {
+    .resume-container {
+        width: 70%;
+    }
+}
+
+.roll {
+    animation-name: menu1;
+    animation-duration: 400ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu1 {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="jagaWebDevTemplate">
+<head>
+	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Front End Web Developer in Chicago area 
+	                                    who likes to code, design and create.">
+
+	<!--GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100" rel="stylesheet">
+
+	<!--ICONS-->
+	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<title>JagaWebDev</title>
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!--custom css-->
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="#/about" class="nav-link">about</a>
+            <a href="#/resume" class="nav-link">resume</a>
+            <a href="#/work" class="nav-link">work</a>
+            <a href="#/experiments" class="nav-link">experiments</a>
+            <a href="#/contact" class="nav-link">contact</a>
+        </div>
+        
+        <a href="#">
+            <div onclick="myFunction()"  class="hamburger ion-android-menu">
+                <div class="drop-menu">
+                    <ul class="drop-ul">
+                        <a href="#/about" class="drop-link"><li class="drop-li">about</li></a>
+                        <a href="#/resume" class="drop-link"><li class="drop-li">resume</li></a>
+                        <a href="#/work" class="drop-link"><li class="drop-li">work</li></a>
+                        <a href="#/experiments" class="drop-link hide"><li class="drop-li">experiments</li></a>
+                        <a href="#/contact" class="drop-link"><li class="drop-li">Contact</li></a>
+                    </ul>
+                </div>
+           </div>
+       </a>
+    </header> 
+	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
+	<div ng-view autoscroll="true"></div>
+	<footer><p>Made with love by Jaga</p></footer>
+	
+	<!-- THIRD PARTY JS-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
